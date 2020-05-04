@@ -1,3 +1,7 @@
+#home {
+  box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
 .react-bs-table-add-btn {
   margin: 0 10px;
 }

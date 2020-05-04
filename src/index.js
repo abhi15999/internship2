@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './App.css';
+import { CookiesProvider } from 'react-cookie';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-// import '././node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+	<CookiesProvider>
+		<App />
+	</CookiesProvider>,
+	document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
